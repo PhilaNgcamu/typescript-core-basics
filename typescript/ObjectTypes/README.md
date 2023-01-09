@@ -4,4 +4,4 @@ Object types are JavaScript values with properties.
 
 - Optional Parameters: use "?" after the property name when you want properties to be optional when invoking the function. Reference: **optionalParameter.ts**
 
-- Note: Use "**tsc --target es2015 <-- fileName -->**" to compile the ts file
+- Note: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
