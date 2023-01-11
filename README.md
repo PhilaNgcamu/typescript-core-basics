@@ -1,3 +1,3 @@
 # typescript-core-basics
 
-Currently upskilling on TypeScript everyday.
+Currently upskilling on TypeScript
