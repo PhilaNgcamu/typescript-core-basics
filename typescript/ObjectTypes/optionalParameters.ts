@@ -1,6 +1,7 @@
-const printName = (obj: {first: string, last?: string}) => {
-    console.log(`My name is ${obj.first}`); 
+function printName(obj: {first: string, last?: string}) {
+    console.log(`My name is ${obj.first} ${obj.last?.toUpperCase()}`); 
 }
 
-printName({first: "Phila"})
-printName({first: "Phila", last: "Ngcamu"})
+printName({first: "Philasande"})
+printName({first: "Philasande", last: "Ngcamu"})
+
