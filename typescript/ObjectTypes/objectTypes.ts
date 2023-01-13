@@ -1,6 +1,6 @@
-const printCoord = (pt: {x: number, y:number}) => {
+function printCoord(pt: {x: number, y: number}) {
     console.log(`The coordinate of x is ${pt.x}`);
     console.log(`The coordinate of y is ${pt.y}`);
 }
 
-printCoord({x:3, y:2})
+printCoord({x:7, y:9})
