@@ -4,4 +4,6 @@ Functions allow data to be manipulated by passing them as parameters which can b
 
 - You can annote the function with a return type but it's not needed as Typescipt assumes any type value as any. Reference: **returnTypeAnnotations.ts**
 
+- Anonymous functions are declared without a variable, typically they may be callback functions in some cases. Reference: **anonymousFunctions.ts**
+
 - Note: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
