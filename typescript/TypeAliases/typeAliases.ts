@@ -12,3 +12,16 @@ function printCoord(pt: Point) {
 }
 
 printCoord({y: 100, x: 100})
+
+type ID = number | string;
+
+declare function getInput(): string;
+declare function sanitize(str: string): string;
+
+type UserInputSanitizedString = string;
+
+function sanitizeInput(str: string): string {
+    return sanitize(str)
+}
+
+let userInput = sanitizeInput(getInput())
