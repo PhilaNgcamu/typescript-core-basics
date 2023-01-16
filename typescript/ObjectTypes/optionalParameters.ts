@@ -1,7 +1,8 @@
 function printName(obj: {first: string, last?: string}) {
-    console.log(`My name is ${obj.first}`);
+    console.log(`My name is ${obj.first} ${obj.last}`);
 }
 
+//the "last" property will return the undefined value if there's no string
 printName({first: "Philasande"})
 printName({first: "Philasande", last: "Ngcamu"})
 
