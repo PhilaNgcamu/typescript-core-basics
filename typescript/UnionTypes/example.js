@@ -1,7 +1,7 @@
 function welcomePeople(x) {
-  //narrow to array type values that are strings
-  if (Array.isArray(x)) {
-    console.log(`Hello ${x.join(" and ")}`);
-  } // Else "x" is a string
-  else console.log(`Welcome lone traveler ${x}`);
+  //Narrow down to a specific type of "x" by checking x is a string[] or string type
+  if (Array.isArray(x)) return x;
+  return x;
 }
+console.log(welcomePeople(["phila", "happy", "ngcamu"]));
+console.log(welcomePeople("Philasande"));
