@@ -6,3 +6,8 @@ function welcomePeople(x: string[] | string) {
 
 welcomePeople(["phila", "happy", "ngcamu"])
 welcomePeople("Philasande")
+
+function getFirstThree(x: number[] | string) {
+  //no need to narrow down because the types, number[] and string have the common method of ".slice()"
+  return x.slice(0,3)
+}
