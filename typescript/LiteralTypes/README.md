@@ -14,4 +14,12 @@
 
 - You can also combine literal types with non-literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 24.
 
+- ````const obj = { counter: 0 };
+  if (someCondition) {
+    obj.counter = 1;
+  }```
+  ````
+
+Above this code, TypeScript interprets the property of obj, "counter" to be a **number** type, not 0 or 1. This also prevents the property being changed to another assignment value. Reference: Reference: [literalTypes.ts](literalTypes.ts) from line 36.
+
 - NOTE: **Boolean literals**, which is `true | false` (union) can also be used.
