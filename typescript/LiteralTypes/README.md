@@ -13,3 +13,5 @@
 - You can also combine numeric literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 20.
 
 - You can also combine literal types with non-literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 24.
+
+- NOTE: **Boolean literals**, which is `true | false` (union) can also be used.
