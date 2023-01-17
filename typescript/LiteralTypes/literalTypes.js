@@ -15,3 +15,8 @@ printText("G'day, mate", "center");
 function compare(a, b) {
     return a === b ? 0 : a > b ? 1 : -1;
 }
+function configure(x) {
+    console.log(x);
+}
+configure({ width: 100 });
+configure("auto");

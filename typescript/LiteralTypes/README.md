@@ -11,3 +11,5 @@
 - "Combining" literals as unions in function prameters and variables, which is more useful than having one literal. Reference: [literalTypes.ts](literalTypes.ts) from line 12.
 
 - You can also combine numeric literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 20.
+
+- You can also combine literal types with non-literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 24.
