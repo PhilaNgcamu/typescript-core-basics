@@ -9,3 +9,5 @@
 - it's not useful to have one literal type on a variable but it's worth to share to understand literal types. Use, `let x: "Hello" = "Hello"` where "Hello" is the literal type of ONLY the "Hello" value. Not this: `let x: "Hello = "World""`. Reference: [literalTypes.ts](literalTypes.ts) from line 9.
 
 - "Combining" literals as unions in function prameters and variables, which is more useful than having one literal. Reference: [literalTypes.ts](literalTypes.ts) from line 12.
+
+- You can also combine numeric literal types. Reference: [literalTypes.ts](literalTypes.ts) from line 20.
