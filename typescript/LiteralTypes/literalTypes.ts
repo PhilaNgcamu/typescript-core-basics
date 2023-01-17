@@ -16,3 +16,7 @@ function printText(s: string, alignment: "left" | "center" | "right") {
 printText("Hello, world", "left");
 printText("G'day, mate", "center");
 //printText("G'day, mate", "centre"); would not work beacuse "center" is not the same as "center". "alignment" only accepts 3 arguments according string literal types.
+
+function compare(a: string, b: string): -1 | 0 | 1 {
+    return a === b ? 0 : a > b ? 1 : -1
+}
