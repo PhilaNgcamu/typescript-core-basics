@@ -16,3 +16,15 @@ function printAll(strs: string | string[] | null) {
         // do nothing
     }
 }
+
+function example(x: string | number, y: string | boolean) {
+    if(x === y) {
+        console.log(x.toUpperCase());
+        console.log(y.toLowerCase());
+    } else {
+        console.log(x);
+        console.log(y);
+    }
+}
+
+example("philasande", "NGCAMU")
