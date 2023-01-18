@@ -8,6 +8,6 @@
 
 - The term **truthiness narrowing** describes the use of conditional expressions such as `&&`s,`||`s, if statements, Boolean negations (`!`), etc. to be coerced to boolean types.
 
-- You can use **equality narrowing** to compare the types of the varibles that store corresonding values. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 20.
+- You can use **equality narrowing** by comparing the types of the varibles that store corresonding values. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 20.
 
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
