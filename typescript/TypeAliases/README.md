@@ -5,4 +5,4 @@ This is an ALTERNATIVE for using object types and union types with type annotati
 
 - The type alias, "Point" is an equivalent to an object type with x & y propeties. Reference: **typeAliases.ts**
 
-- Note: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
+- NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file

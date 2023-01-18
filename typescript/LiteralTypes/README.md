@@ -24,3 +24,5 @@
   Note: Use, `as const` to convert an object to be type literals`. Reference: [literalTypes.ts](literalTypes.ts) from line 36.
 
 - NOTE: **Boolean literals**, which is `true | false` (union) can also be used.
+
+- NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file

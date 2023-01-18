@@ -6,4 +6,4 @@ TypeScript allows you to build new types out of existing ones by combining them.
 
 - Narrowing is also used on the function, welcomePeople. Note: if the function parameter has union type, you may not use narrowing beacuse 2 or more types can share the same method. Reference: **example.ts**
 
-- Note: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
+- NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
