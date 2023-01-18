@@ -6,4 +6,6 @@
 
 - What if the function had 3 types in a parameter, then we "narrowed" down to match a specific type and got two resulting types. To fix this, we will use **truthiness narrowing**. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 8.
 
+- The term **truthiness narrowing** describes the use of conditional expressions such as `&&`s,`||`s, if statements, Boolean negations (`!`), etc. to be coerced to boolean types.
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
