@@ -5,3 +5,5 @@
 - We can "narrow" down to a specific type by having a "type guard", a term to describe the `typeof` keyword used to check if it's a specific type. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 1.
 
 - What if the function had 3 types in a parameter, then we "narrowed" down to match a specific type and got two resulting types. To fix this, we will use **truthiness narrowing**. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 8.
+
+- NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
