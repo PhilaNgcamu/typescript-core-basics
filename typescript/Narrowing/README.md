@@ -10,4 +10,6 @@
 
 - You can use **equality narrowing** by comparing the types of the varibles that store corresonding values. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 20.
 
+- The `in` instance is used to check if the property name in an object exists.
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
