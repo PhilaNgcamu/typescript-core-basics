@@ -14,4 +14,6 @@
 
 - The `instanceof` operator is used to narrow the variable if it contains a _prototype_ chain of the newly constructed object. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 44.
 
+- REMINDER: TypeScript checks the right-side of the assignment in a variable to determin the posible type(s)
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
