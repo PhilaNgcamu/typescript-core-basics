@@ -38,3 +38,9 @@ function move(animal: Fish | Bird | Human) {
     if("swim" in animal) return animal;
     return animal
 }
+
+function logValue(x: Date | string) {
+    if(x instanceof Date) return x.toDateString();
+    return x.toLowerCase()
+
+}
