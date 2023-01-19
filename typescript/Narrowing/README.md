@@ -14,6 +14,8 @@
 
 - The `instanceof` operator is used to narrow the variable if it contains a _prototype_ chain of the newly constructed object. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 44.
 
-- REMINDER: TypeScript checks the right-side of the assignment in a variable to determin the posible type(s)
+- REMINDER: TypeScript checks the right-side of the assignment in a variable to determin the posible type(s).
+
+- A **type predicate** is a user-defined type guard where a function's return type should return a "narrowed" type of a parameter. Reference: [narrowingExamples.ts](narrowingExamples.ts) from line 48.
 
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file

@@ -44,3 +44,14 @@ function logValue(x: Date | string) {
     return x.toLowerCase()
 
 }
+
+function isFish(pet: Fish | Bird): pet is Fish {
+    return !(pet as Fish).swim
+}
+
+declare function getSmallPet(): Fish | Bird;
+
+let pet = getSmallPet();
+ 
+if(isFish(pet)) pet.swim();
+else pet.fly()
