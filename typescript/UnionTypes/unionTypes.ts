@@ -1,10 +1,9 @@
 function printId(id: number | string) {
-    console.log(`Your id is ${id}`);  
+    console.log(`Your id is ${id}`);
 }
 
-printId("202")
+printId(32)
+printId("98")
+//Error: Because printId() accepts number and string types. Not object types
+printId({id:777})
 
-printId(202)
-
-//Error beacuse the "id" parameter doesn't take in an object type
-printId({myId: 232})
