@@ -1,13 +1,11 @@
-function welcomePeople(x: string[] | string) {
-  //Narrow down to a specific type of "x" by checking x is a string[] or string type
-  if(Array.isArray(x)) return x;
-  return x
+function printId(id: number | string) {
+  //Error beacuse Typescript anticipates where id will have a number or string value but the number type doesn't have the .toUpperCase() method.
+  console.log(`You id is: ${id.toUpperCase()}`);
+  
 }
 
-welcomePeople(["phila", "happy", "ngcamu"])
-welcomePeople("Philasande")
-
-function getFirstThree(x: number[] | string) {
-  //no need to narrow down because the types, number[] and string have the common method of ".slice()"
-  return x.slice(0,3)
+//To fix this use, narrowing to reduce the id variable to a specific true type
+function printID(id: number | string) {
+  if(typeof id === "string") console.log(`You id is: ${id.toUpperCase()}`);
+  else Number.isInteger(id)
 }
