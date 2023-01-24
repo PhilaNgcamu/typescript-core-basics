@@ -6,3 +6,9 @@ function welcomePeople(x: string | string[]) {
 }
 
 welcomePeople(["Phila", "Siya"])
+
+function getFirstThree(x: number[] | string) {
+    return x.slice(0, 3)
+}
+
+getFirstThree([1,2,3])

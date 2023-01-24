@@ -6,3 +6,7 @@ function welcomePeople(x) {
         console.log(`Welcome, lone traveler ${x}`);
 }
 welcomePeople(["Phila", "Siya"]);
+function getFirstThree(x) {
+    return x.slice(0, 3);
+}
+getFirstThree([1, 2, 3]);
