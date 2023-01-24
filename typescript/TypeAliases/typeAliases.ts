@@ -7,3 +7,14 @@ function printCoord(pt: Point) {
 }
 
 printCoord({x: 12, y:88})
+
+type UserInputSanitizedString = string | number;
+
+declare function getInput(): string;
+declare function sanitize(): string;
+
+function sanitizeInput(str: string): UserInputSanitizedString {
+    return str;
+}
+
+let userInput = sanitizeInput(getInput())
