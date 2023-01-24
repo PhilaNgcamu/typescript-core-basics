@@ -1,3 +1,5 @@
+<h1>Type Aliases</h1>
+
 TypeScript allows you to create type aliases when you declare a name for any type.
 This is an ALTERNATIVE for using object types and union types with type annotations.
 
