@@ -1,7 +1,5 @@
 function printCoord(pt) {
-    console.log(`The coordinates of x value is 
-     ${pt.x}`);
-    console.log(`The coordinates of y value is 
-     ${pt.y}`);
+    console.log(`The coordinates of x is ${pt.x}`);
+    console.log(`The coordinates of y is ${pt.y}`);
 }
-printCoord({ y: 100, x: 100 });
+printCoord({ x: 12, y: 88 });
