@@ -4,8 +4,8 @@ interface Point {
 }
 
 function printCoord(pt: Point) {
-    console.log(`The coordinates of x value is ${pt.x}`);
-    console.log(`The coordinates of y value is ${pt.y}`);
+    console.log(`The coordinates of ${pt.x}`);
+    console.log(`The coordinates y ${pt.y}`);
 }
 
-console.log(printCoord({x: 100, y: 100}));
+printCoord({x: 100, y: 2000})
