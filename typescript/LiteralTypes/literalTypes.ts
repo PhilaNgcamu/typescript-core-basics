@@ -13,3 +13,12 @@ function printText(s: string, alignment: "left" | "right" | "center") {
 printText("Nice one, Phila", "left")
 //But there will be an error is alignment has an invalid type
 //printText("Nice one, Phila", "bottom")
+
+
+//The function below should return a number type based on two string comparisons
+function compare(a: string, b: string): -1 | 0 | 1 {
+    return a === b ? 0 : a > b ? 1: -1  
+}
+
+console.log(compare("a", "b"));
+
