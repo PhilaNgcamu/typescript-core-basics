@@ -30,4 +30,6 @@ function configure(x: Options | "auto" | 5) {
     console.log(x);  
 }//where, Options is a non-literal type except, "auto" & 5
 configure({width: 550})
+//The error here will be: configure("automatic"); configure(6)
+
 
