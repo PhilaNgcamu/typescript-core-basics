@@ -22,3 +22,12 @@ function compare(a: string, b: string): -1 | 0 | 1 {
 
 console.log(compare("a", "b"));
 
+//Combine literal types with non-literal Types
+
+interface Options {width: number;}//Object type
+
+function configure(x: Options | "auto" | 5) {
+    console.log(x);  
+}//where, Options is a non-literal type except, "auto" & 5
+configure({width: 550})
+
