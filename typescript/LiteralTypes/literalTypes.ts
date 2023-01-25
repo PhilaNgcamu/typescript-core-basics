@@ -32,4 +32,16 @@ function configure(x: Options | "auto" | 5) {
 configure({width: 550})
 //The error here will be: configure("automatic"); configure(6)
 
+//Literal Inference:
+const obj = {counter: 0}// where the object property is a "number" type for any possible numbers
+obj.counter = 4;
+
+declare function handleRequest(url: string, method: "GET" | "POST"): void;
+
+//The "req" object has properties, "url" & "method" with type "string", not a literal type.
+//To turn this object to have literal type properties use "as const" (this concept is called Literal Inference)
+const req = { url: "https://example.com", method: "GET"} as const
+
+handleRequest(req.url, req.method)
+
 

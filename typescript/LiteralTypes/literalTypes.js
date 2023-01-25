@@ -15,3 +15,15 @@ function compare(a, b) {
     return a === b ? 0 : a > b ? 1 : -1;
 }
 console.log(compare("a", "b"));
+function configure(x) {
+    console.log(x);
+} //where, Options is a non-literal type except, "auto" & 5
+configure({ width: 550 });
+//The error here will be: configure("automatic"); configure(6)
+//Literal Inference:
+const obj = { counter: 0 }; // where the object property is a "number" type for any possible numbers
+obj.counter = 4;
+//The "req" object has properties, "url" & "method" with type "string", not a literal type.
+//To turn this object to have literal type properties use "as const" (this concept is called Literal Inference)
+const req = { url: "https://example.com", method: "GET" };
+handleRequest(req.url, req.method);

@@ -21,7 +21,7 @@
   ```
 
 - The above code, TypeScript interprets the property of obj, "counter" to be a **number** type, not 0 or 1. This also prevents the property being changed to another assignment value.
-  Note: Use, `as const` to convert an object to be type literals`. Reference: [literalTypes.ts](literalTypes.ts)
+  Note: Use, `as const` to convert an object to be type literals. This is know as **Literal Inference**. Reference: [literalTypes.ts](literalTypes.ts)
 
 - NOTE: **Boolean literals**, which is `true | false` (union) can also be used.
 
