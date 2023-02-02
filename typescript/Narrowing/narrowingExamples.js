@@ -1,5 +1,8 @@
 function padLeft(padding, input) {
     //This below will throw an error type becuse "padding" can be a string type whicj isn't assignable to the repeat method:
     // return "  ".repeat(padding)
-    throw new Error("return type string");
+    //To fix this, narrow to a specific type -- type guard:
+    if (typeof padding === "number")
+        return " ".repeat(padding) + input;
+    return input;
 }
