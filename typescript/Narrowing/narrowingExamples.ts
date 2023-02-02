@@ -40,6 +40,8 @@ function move(animal: Fish | Bird) {
 function logValue(x: Date | string) {
     if(x instanceof Date) console.log(x.toLocaleDateString());
     else console.log(x.toLowerCase());
-    
-    
+}
+
+function isFish(pet: Fish | Bird): pet is Fish {
+    return Boolean((pet as Fish))
 }
