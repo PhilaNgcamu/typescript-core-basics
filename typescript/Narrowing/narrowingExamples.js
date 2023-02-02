@@ -31,3 +31,17 @@ function move(animal) {
         return animal.swim();
     return animal.eat();
 }
+function logValue(x) {
+    if (x instanceof Date)
+        console.log(x.toLocaleDateString());
+    else
+        console.log(x.toLowerCase());
+}
+function isFish(pet) {
+    return Boolean(pet);
+}
+let pet = getSmallPet();
+if (isFish(pet))
+    pet.swim();
+else
+    pet.fly();

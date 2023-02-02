@@ -45,3 +45,9 @@ function logValue(x: Date | string) {
 function isFish(pet: Fish | Bird): pet is Fish {
     return Boolean((pet as Fish))
 }
+declare function getSmallPet() : Fish | Bird
+
+let pet = getSmallPet()
+
+if(isFish(pet)) pet.swim();
+else pet.fly()
