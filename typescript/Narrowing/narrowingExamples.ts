@@ -26,7 +26,6 @@ function example(x: string | number, y: string | boolean) {
         y.toLowerCase()
     } else {
         console.log(y);
-        
     }
 }
 
