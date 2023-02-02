@@ -36,3 +36,10 @@ function move(animal: Fish | Bird) {
     if("swim" in animal) return animal.swim()
     return animal.eat()
 }
+
+function logValue(x: Date | string) {
+    if(x instanceof Date) console.log(x.toLocaleDateString());
+    else console.log(x.toLowerCase());
+    
+    
+}
