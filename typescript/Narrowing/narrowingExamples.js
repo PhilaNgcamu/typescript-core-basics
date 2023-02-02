@@ -26,3 +26,8 @@ function example(x, y) {
         console.log(y);
     }
 }
+function move(animal) {
+    if ("swim" in animal)
+        return animal.swim();
+    return animal.eat();
+}

@@ -29,3 +29,10 @@ function example(x: string | number, y: string | boolean) {
     }
 }
 
+type Fish = { swim: () => void }
+type Bird = { fly: () => void, eat: () => void }
+
+function move(animal: Fish | Bird) {
+    if("swim" in animal) return animal.swim()
+    return animal.eat()
+}
