@@ -6,3 +6,14 @@ function padLeft(padding, input) {
         return " ".repeat(padding) + input;
     return input;
 }
+function printAll(strs) {
+    //NOTE: null is also an object. Use conditional operators to only narrow to, string[]
+    if (strs && typeof strs === "object") {
+        for (const s of strs) {
+            console.log(s);
+        }
+    }
+    else {
+        //do nothing
+    }
+}
