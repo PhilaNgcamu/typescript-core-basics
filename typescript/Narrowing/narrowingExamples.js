@@ -17,3 +17,12 @@ function printAll(strs) {
         //do nothing
     }
 }
+function example(x, y) {
+    if (x === y) {
+        x.toLowerCase();
+        y.toLowerCase();
+    }
+    else {
+        console.log(y);
+    }
+}

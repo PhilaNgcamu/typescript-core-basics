@@ -20,3 +20,13 @@ function printAll(strs: string | string[] | null)
     }
 }
 
+function example(x: string | number, y: string | boolean) {
+    if(x === y) {
+        x.toLowerCase();
+        y.toLowerCase()
+    } else {
+        console.log(y);
+        
+    }
+}
+
