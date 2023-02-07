@@ -16,3 +16,7 @@ function firstElement(arr) {
 const u = firstElement(["Philasande"]);
 const s = firstElement([1, 2, 3, 4]);
 const t = firstElement([new Date()]);
+function map(arr, func) {
+    return arr.map(func);
+}
+const parsed = map(["1", "2", "3"], (n) => parseInt(n));

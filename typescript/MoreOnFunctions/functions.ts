@@ -33,3 +33,9 @@ function firstElement<Type>(arr: Type[]): Type | undefined {
 const u = firstElement(["Philasande"])
 const s = firstElement([1,2,3,4])
 const t = firstElement([new Date()])
+
+function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[]{ 
+    return arr.map(func)
+}
+
+const parsed = map(["1", "2", "3"], (n) => parseInt(n));
