@@ -10,3 +10,9 @@ function doSomething(fn) {
 function fn(ctor) {
     return new ctor("Hello");
 }
+function firstElement(arr) {
+    return arr[0];
+}
+const u = firstElement(["Philasande"]);
+const s = firstElement([1, 2, 3, 4]);
+const t = firstElement([new Date()]);

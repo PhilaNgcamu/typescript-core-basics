@@ -8,6 +8,8 @@
 
 <h2>Generic Functions</h2>
 
-- In TypeScript, generic functions are used when we want to describe a correspondence between two values by declaring a _type parameter_ in the function signature. Reference: [functions.ts](functions.ts).
+- In TypeScript, generic functions are used when we want to describe a correspondence between two values (input and output) by declaring a _type parameter_ in the function signature.
+
+- This ensures that we have a specific type when a function returns value. Reference: [functions.ts](functions.ts).
 
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file

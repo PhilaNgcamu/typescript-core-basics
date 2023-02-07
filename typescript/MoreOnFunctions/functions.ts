@@ -25,3 +25,11 @@ type SomeConstructor = {
 function fn(ctor: SomeConstructor) {
     return new ctor("Hello")
 }
+
+function firstElement<Type>(arr: Type[]): Type | undefined {
+    return arr[0];
+}
+
+const u = firstElement(["Philasande"])
+const s = firstElement([1,2,3,4])
+const t = firstElement([new Date()])
