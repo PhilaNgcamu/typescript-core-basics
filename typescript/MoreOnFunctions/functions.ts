@@ -17,7 +17,7 @@ function doSomething(fn: DescribableFunction) {
 }
 
 
-type SomeObject = any;
+type SomeObject = number;
 type SomeConstructor = {
     new (s: string): SomeObject
 }
