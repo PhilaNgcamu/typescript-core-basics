@@ -7,3 +7,6 @@ function greeterTwo(fn) {
 function doSomething(fn) {
     console.log(fn.description + " returned " + fn(6));
 }
+function fn(ctor) {
+    return new ctor("Hello");
+}
