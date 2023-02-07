@@ -32,10 +32,20 @@ function firstElement<Type>(arr: Type[]): Type | undefined {
 
 const u = firstElement(["Philasande"])
 const s = firstElement([1,2,3,4])
-const t = firstElement([new Date()])
+const t = firstElement([])
 
 function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[]{ 
     return arr.map(func)
 }
 
 const parsed = map(["1", "2", "3"], (n) => parseInt(n));
+
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+    if(a.length > b.length) return a;
+    return b;
+}
+
+const longerArray = longest([1,2,3,4], [1,2,3,4,5,6,7,8]);
+const longerString = longest("Philasande", "Ngcamu");
+//Error below as the function doesn't allow number arguments beacuse of the length constraint:
+//const notOK = longest(12,45)

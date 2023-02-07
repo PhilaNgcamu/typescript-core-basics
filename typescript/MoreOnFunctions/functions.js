@@ -15,8 +15,17 @@ function firstElement(arr) {
 }
 const u = firstElement(["Philasande"]);
 const s = firstElement([1, 2, 3, 4]);
-const t = firstElement([new Date()]);
+const t = firstElement([]);
 function map(arr, func) {
     return arr.map(func);
 }
 const parsed = map(["1", "2", "3"], (n) => parseInt(n));
+function longest(a, b) {
+    if (a.length > b.length)
+        return a;
+    return b;
+}
+const longerArray = longest([1, 2, 3, 4], [1, 2, 3, 4, 5, 6, 7, 8]);
+const longerString = longest("Philasande", "Ngcamu");
+//Error below as the function doesn't allow number arguments beacuse of the length constraint:
+//const notOK = longest(12,45)
