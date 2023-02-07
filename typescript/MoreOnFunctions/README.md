@@ -6,4 +6,8 @@
 
 - You can create a new object with the **new** operator. This can be applied when you want have a defined constructor with the new operator to create an object. This is called **construct signatures**. Reference: [functions.ts](functions.ts).
 
+<h2>Generic Functions</h2>
+
+- In TypeScript, generic functions are used when we want to describe a correspondence between two values by declaring a _type parameter_ in the function signature. Reference: [functions.ts](functions.ts).
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
