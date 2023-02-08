@@ -57,3 +57,9 @@ function minimumLength<Type extends { length: number }>(obj: Type, minimum: numb
    // return { length: minimum };
 
 }
+
+function combine<Type>(arr1: Type[], arr2: Type[]): Type[] {
+    return arr1.concat(arr2)
+}
+//Error on arr2 because "Type" has been inferred to "string[]" type
+const arr = combine(["Philasande"], [0, 1, 2])
