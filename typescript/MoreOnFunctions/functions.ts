@@ -50,14 +50,10 @@ const longerString = longest("Philasande", "Ngcamu");
 //Error below as the function doesn't allow number arguments beacuse of the length constraint:
 //const notOK = longest(12,45)
 
-function minimumLength<Type extends { length: number }>(
-    obj: Type,
-    minimum: number
-  ) {
-    if (obj.length >= minimum) {
-      return obj;
-    } else {
-      return { length: minimum };
-  
-    }
-  }
+function minimumLength<Type extends { length: number }>(obj: Type, minimum: number): Type {
+    if(obj.length >= minimum) return obj;
+
+    //Result an error because the the value return is not the type of the input due to inference:
+   // return { length: minimum };
+
+}
