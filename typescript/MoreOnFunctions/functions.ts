@@ -52,7 +52,7 @@ const longerString = longest("Philasande", "Ngcamu");
 
 function minimumLength<Type extends { length: number }>(obj: Type, minimum: number): Type {
     if(obj.length >= minimum) return obj;
-
+    return obj
     //Result an error because the the value return is not the type of the input due to inference:
    // return { length: minimum };
 
