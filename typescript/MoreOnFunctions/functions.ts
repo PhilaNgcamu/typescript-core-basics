@@ -48,4 +48,16 @@ function longest<Type extends { length: number }>(a: Type, b: Type) {
 const longerArray = longest([1,2,3,4], [1,2,3,4,5,6,7,8]);
 const longerString = longest("Philasande", "Ngcamu");
 //Error below as the function doesn't allow number arguments beacuse of the length constraint:
-const notOK = longest(12,45)
+//const notOK = longest(12,45)
+
+function minimumLength<Type extends { length: number }>(
+    obj: Type,
+    minimum: number
+  ) {
+    if (obj.length >= minimum) {
+      return obj;
+    } else {
+      return { length: minimum };
+  
+    }
+  }

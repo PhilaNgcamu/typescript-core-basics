@@ -12,4 +12,6 @@
 
 - This ensures that we have a specific type when a function returns value. Reference: [functions.ts](functions.ts).
 
+- Beware when working with constraints in a function that returns a `Type` or a value that matches the constraint because the function expects same `Type` to be returned. Reference: [functions.ts](functions.ts).
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
