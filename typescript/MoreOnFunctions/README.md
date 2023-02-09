@@ -14,4 +14,8 @@
 
 - Beware when working with constraints in a function that returns a `Type` or a value that matches the constraint because the function expects same `Type` to be returned. Reference: [functions.ts](functions.ts).
 
+<h2>Functions Overloads</h2>
+
+- In TypeScript, function signatures (implementation of the input argument(s) and output value(s)), which are defined by their types. Use function overloads to expect what type of input and output should expect, in respect to the function signature. Reference: [functions.ts](functions.ts).
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
