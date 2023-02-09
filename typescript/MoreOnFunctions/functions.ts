@@ -67,3 +67,17 @@ function combine<Type>(arr1: Type[], arr2: Type[]): Type[] {
 }
 //Error on arr2 because "Type" has been inferred to "string[]" type
 const arr = combine<string | number>(["Philasande"], [0, 1, 2]);
+
+//Function overloads:
+
+function makeDate(mOrTimestamp: number): Date;
+function makeDate(mOrTimestamp: number, d: number, y: number): Date;
+function makeDate(mOrTimestamp: number, d?: number, y?: number) {
+  if (d && y) return new Date(y, mOrTimestamp, d);
+  return new Date(mOrTimestamp);
+}
+
+const d1 = makeDate(12345678, 5, 7);
+const d2 = makeDate(12345678);
+//Error because there's no function overload for d3
+const d3 = makeDate(12345, 7);
