@@ -18,4 +18,6 @@
 
 - In TypeScript, function signatures (implementation of the input argument(s) and output value(s)), which are defined by their types. Use function overloads to expect what type of input and output should expect, in respect to the function signature. Reference: [functions.ts](functions.ts).
 
+- NOTE: You should have two or more function overloads above the function implementation.
+
 - NOTE: Use "**tsc --target es2021 <-- fileName -->**" to compile the ts file
